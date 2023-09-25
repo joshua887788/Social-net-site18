@@ -17,7 +17,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/thoughts', thoughtRoutes);
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/CHALLENGE18', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/CHALLENGE18', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
